@@ -1,4 +1,4 @@
-package com.example.sc_android_part
+package com.main.sc_android_part
 
 import org.junit.Test
 

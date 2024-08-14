@@ -1,4 +1,4 @@
-package com.example.sc_android_part.ui.theme
+package com.main.sc_android_part.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
