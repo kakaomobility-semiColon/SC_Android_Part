@@ -29,14 +29,14 @@ android {
         buildConfigField("String", "KAKAO_APP_KEY", properties.getProperty("KAKAO_APP_KEY"))
 
 
-        defaultConfig {
-            ndk {
-                abiFilters.add("arm64-v8a")
-                abiFilters.add("armeabi-v7a")
-                abiFilters.add("x86")
-                abiFilters.add("x86_64")
-            }
+
+        ndk {
+            abiFilters.add("arm64-v8a")
+            abiFilters.add("armeabi-v7a")
+            abiFilters.add("x86")
+            abiFilters.add("x86_64")
         }
+
 
 
         vectorDrawables {
@@ -106,5 +106,7 @@ dependencies {
     implementation ("com.kakao.sdk:v2-share:2.11.2") // 메시지(카카오톡 공유)
     implementation ("com.kakao.sdk:v2-navi:2.11.2") // 카카오내비
     implementation ("com.kakao.sdk:v2-friend:2.11.2") // 카카오톡 소셜 피커, 리소스 번들 파일 포함
+
+    implementation ("androidx.compose.material:material-icons-extended:1.7.5")
 
 }
